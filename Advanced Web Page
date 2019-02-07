@@ -1,0 +1,44 @@
+
+
+<h1 align=center>Advanced Web Page by Ray</h1><br><br>
+
+<font color=blue> The Ocean Is Great.<br>
+ </font>
+
+<table border=5>
+ <tr><td></td><td>Sharks</td></tr>
+  <tr><td>Puppies</td><td><font color=green>They Are Both Cool!</font></td></tr><br>
+
+</table>
+ <ol>Sharks Rated
+  <li>fg
+   <li>jdh
+    <li>
+     <li>
+      <li>
+  </ol><br>
+
+<ul>Overall Best Looking<br>
+ <li>Cuddle Fish
+  <li>Mantis Shrimp
+   <li>
+    <li>
+     <li>
+      <li>
+  </ul>
+
+The following are all form elements: <br>
+ <form>
+
+First name:<input type=text id="mytext01" value"Ray">
+ <input type=checkbox ><br>
+  <input type=radio >
+   <input type=hidden<input type file> <input type=reset><input type=submit>
+    <input type=button value=click onclick="alert('cool')">
+     <textarea id="Myarea01" cols=60 rows=5 > wow </textarea>
+      <select id="myselect01" size=2>
+       <option value='myOne'> One
+        <option value='myTwo'> Two
+         <option value='myThree'> Three
+  </select>
+ </form>
