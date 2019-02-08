@@ -9,16 +9,18 @@
  <tr><td></td><td>Sharks</td></tr>
   <tr><td>Puppies</td><td><font color=green>They Are Both Cool!</font></td></tr><br>
 
+ <b style="background-color:LightSeaGreen; color:Navy; width:500px"> WHAT DO THEY HAVE IN COMMON? </b><br><br>
+
 </table>
- <ol>Sharks Rated
-  <li>fg
+ <b style="color:DeepSkyBlue; width:500px"> <ol>Sharks Rated</b><br>
+  <li>Tiger Shark
    <li>jdh
     <li>
      <li>
       <li>
-  </ol><br>
+  </ol><br><br>
 
-<ul>Overall Best Looking<br>
+<b style="color:DeepSkyBlue; width:500px"><ul>Overall Best Looking</b><br>
  <li>Cuddle Fish
   <li>Mantis Shrimp
    <li>
@@ -34,7 +36,7 @@ First name:<input type=text id="mytext01" value"Ray">
  <input type=checkbox ><br>
   <input type=radio >
    <input type=hidden<input type file> <input type=reset><input type=submit>
-    <input type=button value=click onclick="alert('cool')">
+    <input type=button value=click onclick="alert('dont tell the teacher but im distracted')">
      <textarea id="Myarea01" cols=60 rows=5 > wow </textarea>
       <select id="myselect01" size=2>
        <option value='myOne'> One
@@ -42,3 +44,8 @@ First name:<input type=text id="mytext01" value"Ray">
          <option value='myThree'> Three
   </select>
  </form>
+
+
+
+
+
