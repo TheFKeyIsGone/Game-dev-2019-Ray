@@ -13,7 +13,7 @@
 
 </table>
  <b style="color:DeepSkyBlue; width:500px"> <ol>Sharks Rated</b><br>
-  <li>Tiger Shark
+  <br><li>Tiger Shark
    <li>jdh
     <li>
      <li>
@@ -21,13 +21,13 @@
   </ol><br><br>
 
 <b style="color:DeepSkyBlue; width:500px"><ul>Overall Best Looking</b><br>
- <li>Cuddle Fish
+ <br><li>Cuddle Fish
   <li>Mantis Shrimp
    <li>
     <li>
      <li>
       <li>
-  </ul>
+  </ul><br><br>
 
 The following are all form elements: <br>
  <form>
@@ -44,6 +44,7 @@ First name:<input type=text id="mytext01" value"Ray">
          <option value='myThree'> Three
   </select>
  </form>
+
 
 
 
