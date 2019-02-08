@@ -1,5 +1,5 @@
 # Game-dev-2019-Ray
-My repository
+My repository for game development 2019
 
 
 
