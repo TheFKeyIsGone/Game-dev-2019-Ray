@@ -21,7 +21,7 @@
 <input type=button value="vnariable" onclick="{
    myX = document.all.myText02.value
 
-   document.all.myArea01.value = myX + ' x 3 = ' + myX * myX
+   document.all.myArea01.value = myX + ' x 5 = ' + myX * myX
    
    
 }"><br><br><br>
