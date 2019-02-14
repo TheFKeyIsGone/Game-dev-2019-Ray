@@ -13,8 +13,9 @@
 
 <input type=button value="click clack" onclick="{
    document.all.myArea01.value = document.all.myText01.value
-
 }"><br><br>
+
+
 
 <input type=text id="myText02" value=5>
 <input type=button value="vnariable" onclick="{
@@ -29,5 +30,54 @@
    alert('loop '+ myLoop)
   }
 }">
+
+<input type=button value="decision" onclick="{
+   myX = 3
+   if (myX == 3){
+  document.all.myArea01.value = 'yes 3 does equal 3. it is ' + myX
+  } else {
+    document.all.myArea01.value = 'im wrong ' + myX
+  }
+}">
+
+<script>
+
+
+function myFun(myPass){
+   document.all.myArea01.value = myPass + ' a function called myFun()'
+}
+
+</script>
+
+
+<input type=button value="Functions" onclick="{
+   myPass = 'Really not fun,'
+   myFun(myPass)
+}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
