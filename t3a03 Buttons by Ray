@@ -1,0 +1,28 @@
+<br>
+
+<h3 align=center> t3a03-buttons-ray.html </h3><br><br>
+
+<input type=button value="click me :)" onclick="{
+   alert('Hope you are happy')
+}"><br><br><br>
+
+<input type=text id="myText01" value="are you having fun?"><br>
+<textarea id="myArea01" rows=4 cols=70></textarea><br><br>
+
+
+<input type=button value="click clack" onclick="{
+   document.all.myArea01.value = document.all.myText01.value
+
+}"><br><br>
+
+
+<input type=button value="vnariable" onclick="{
+   myX = 3
+   myWord = 'dog'
+  // myArray[3] = 'super'
+   document.all.myArea01.value = 'myX x myX = ' + myX * myX
+   
+   
+}"><br><br><br>
+
+   
