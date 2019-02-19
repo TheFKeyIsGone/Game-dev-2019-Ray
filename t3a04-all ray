@@ -50,11 +50,25 @@ document.all.myArea01.value = ''
 
 
 <input type=button value="desivivin" onclick="{
-x=9
-if (x== 9){ document.myArea01.value = 'god'
-} else {
-document.myArea01.value = 'good job future me <]:)'
-
-
+ x=9
+  if (x== 9){ document.myArea01.value = 'god'
+   } else {
+    document.myArea01.value = 'good job future me <]:)'
 
 }">
+
+<input type=button value="arrays" onclick="{
+ myMax = 3
+  myArray = new Array(myMax)
+   myArray[1] = 'ray'
+    myArray[2] = 'also ray'
+     myArray[3] = 'every array makes me think hes saying ray'
+      document.all.myArea01.value = myArray[3] + ': bad'
+
+}">
+
+<br>clcick clackckk
+
+
+
+
