@@ -1,0 +1,60 @@
+<h1 align=center>im gonna fix it just leave me be</h1>
+ <br><br>
+  this is basically a study sheet but most of it is wrong brcause im running on 2 hours of sleep<br>
+   non-tired ray can fix this:)
+    <br><br>
+ 
+input/output<br>
+ variables<br>
+  loops<br>
+   decisions<br>
+    functions<br>
+     arrays<br>
+      events<br>
+       objects<br>
+        classes<br>
+
+<br><br>
+<script>
+ function my01(){
+  document.all.myArea01.value = 'everytime you forget i die'
+ }
+
+
+  function my02(){
+   document.all.myArea01.value = 'you are tearing this family apart'
+}
+ </script>
+
+<input type=text id="mytext01" value="What happens you ask?"><br>
+ <textarea id="myArea01" rows=4 cols=70></textarea><br>
+
+<input type=button value="well," onclick="{
+ my01()
+}">
+
+<input type=button value=":)" onclick="{
+ my02()
+}">
+
+<input type=button value="loop" onclick="{
+document.all.myArea01.value = ''
+ for ( x = 1; x <= 3; x++){
+   document.all.myArea01.value =+ x + ', '
+}
+
+}">
+
+<---i am tired but this code is wrong--->
+
+
+
+<input type=button value="desivivin" onclick="{
+x=9
+if (x== 9){ document.myArea01.value = 'god'
+} else {
+document.myArea01.value = 'good job future me <]:)'
+
+
+
+}">
