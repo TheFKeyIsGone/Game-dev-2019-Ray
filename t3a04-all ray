@@ -9,7 +9,6 @@
    document.all.myArea01.value = 'everytime you forget i die'
     }
 
-
   function my02(){
    document.all.myArea01.value = 'and i will take you with me'
     }
@@ -33,9 +32,6 @@
     }
  
      }">
-
-
-
 
 <input type=button value="decisions" onclick="{
  x = 9
@@ -64,19 +60,24 @@
 
   }">
 
-<a href="https://www.w3schools.com/tags/ref_eventattributes.asp">enevts</a>
-
+<a href="https://www.w3schools.com/tags/ref_eventattributes.asp">event list</a>
 
 <input type=button value="object example" onClick="{
 x = 2
  person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 50,
-  eyeColor: 'blue'
+  firstName: 'you, ray ',
+  lastName: 'dobson lyon',
+  age: 16,
+  eyeColor: 'green'
 }
 
- document.all.myArea01.value = 'person.firstName is ' + 
-   person.firstName + '. person.age is ' + person.age
+ document.all.myArea01.value = 'truely, the one who forgets their .html the most is ' + 
+   person.firstName + person.lastName + '. for the ' + person.age + ' years you have been alive you are just now losing your mind.'
+ + ' your ' + person.eyeColor + ' eyes have skipped over the easiest mistake and have doomed your code.'
 
+}">
+
+
+<input type=button value="classes" onClick="{
+document.all.myArea01.value = JSON.stringify(document, null, 3)
 }">
