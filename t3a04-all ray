@@ -1,74 +1,82 @@
-<h1 align=center>im gonna fix it just leave me be</h1>
+<h1 align=center>Should i forget the .html?</h1>
  <br><br>
-  this is basically a study sheet but most of it is wrong brcause im running on 2 hours of sleep<br>
-   non-tired ray can fix this:)
-    <br><br>
- 
-input/output<br>
- variables<br>
-  loops<br>
-   decisions<br>
-    functions<br>
-     arrays<br>
-      events<br>
-       objects<br>
-        classes<br>
 
+    <b>ABSOLUTELY NOT</b>
+ 
 <br><br>
-<script>
- function my01(){
-  document.all.myArea01.value = 'everytime you forget i die'
- }
+ <script>
+  function my01(){
+   document.all.myArea01.value = 'everytime you forget i die'
+    }
 
 
   function my02(){
-   document.all.myArea01.value = 'you are tearing this family apart'
-}
- </script>
+   document.all.myArea01.value = 'and i will take you with me'
+    }
+     </script>
 
 <input type=text id="mytext01" value="What happens you ask?"><br>
  <textarea id="myArea01" rows=4 cols=70></textarea><br>
 
-<input type=button value="well," onclick="{
+<input type=button value="what?" onclick="{
  my01()
-}">
+  }">
 
-<input type=button value=":)" onclick="{
+<input type=button value="but-" onclick="{
  my02()
-}">
+  }">
 
-<input type=button value="loop" onclick="{
-document.all.myArea01.value = ''
- for ( x = 1; x <= 3; x++){
-   document.all.myArea01.value =+ x + ', '
-}
-
-}">
-
-<---i am tired but this code is wrong--->
+<input type=button value="how many times have i done it" onclick="{
+ document.all.myArea01.value = ''
+  for ( x = 1; x <= 3; x++){
+   document.all.myArea01.value += x + ', '
+    }
+ 
+     }">
 
 
 
-<input type=button value="desivivin" onclick="{
- x=9
-  if (x== 9){ document.myArea01.value = 'god'
-   } else {
-    document.myArea01.value = 'good job future me <]:)'
 
-}">
+<input type=button value="decisions" onclick="{
+ x = 9
+  if (x == 9){
+   document.all.myArea01.value = 'nice'
+    } else {
+     document.myArea01.value = 'god'
+     }
+      }">
 
 <input type=button value="arrays" onclick="{
  myMax = 3
   myArray = new Array(myMax)
-   myArray[1] = 'ray'
-    myArray[2] = 'also ray'
-     myArray[3] = 'every array makes me think hes saying ray'
-      document.all.myArea01.value = myArray[3] + ': bad'
+   myArray[1] = 'hm1'
+    myArray[2] = 'hm2'
+     myArray[3] = 'hm3 '
+      document.all.myArea01.value = myArray[3] + ''
+       for ( x = 1; x <= 3; x++){
+        document.all.myArea01.value += myArray[x] + ' '
+
+         }
+          }">
+
+<input type=button value="i will forget" onmouseover="{
+ document.all.myArea01.value = 'Dont Even Think About It.'
+
+  }">
+
+<a href="https://www.w3schools.com/tags/ref_eventattributes.asp">enevts</a>
+
+
+<input type=button value="object example" onClick="{
+x = 2
+ person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 50,
+  eyeColor: 'blue'
+}
+
+ document.all.myArea01.value = 'person.firstName is ' + 
+   person.firstName + '. person.age is ' + person.age
 
 }">
-
-<br>clcick clackckk
-
-
-
-
