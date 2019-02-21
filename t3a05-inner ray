@@ -1,0 +1,25 @@
+<!--this is the 'not seen on webpage' thing-->
+
+<h1 align=center>Inner html by ray</h1>
+
+<a href="https://www.quackit.com/javascript/tutorial/innerhtml_in_javascript.cfm">
+ay! no longer need to refresh</a><br><br>
+
+
+x = <input type=text id="myText01" value=7><br><br>
+<div id="myDiv01">have you accepted Him as your friend?</div><br>
+
+<input type=button value="yes" onClick="{
+  document.all.myDiv01.innerHTML = 
+  ' <font color=green>good, he\'s glad to be your friend</font>'
+}">
+
+<!-- using back slash \\ solves quotation errors, but it has to make a x or some shit-->
+
+
+<input type=button value="no" onClick="{
+  document.all.myDiv01.innerHTML = 
+   '<font style=\' color:black; background-color:red\' color'+
+    '</font> you\'ve betrayed him '
+
+}">
