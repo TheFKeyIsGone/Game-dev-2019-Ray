@@ -5,7 +5,6 @@
 <a href="https://www.quackit.com/javascript/tutorial/innerhtml_in_javascript.cfm">
  ay! no longer need to refresh</a><br><br>
 
-
 x = <input type=text id="myText01" value=7><br><br>
  <div id="myDiv01">have you accepted Him as your friend?</div><br>
 
@@ -15,7 +14,6 @@ x = <input type=text id="myText01" value=7><br><br>
     }">
 
 <!-- using back slash \\ solves quotation errors, but it has to make a x or some shit-->
-
 
 <input type=button value="no" onClick="{
   document.all.myDiv01.innerHTML = '<iframe width=560 height=315 src=\'https://www.youtube.com/embed/Sx5Rh-bkW9I\' frameborder=0 allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'
@@ -43,12 +41,9 @@ x = <input type=text id="myText01" value=7><br><br>
   document.all.myDiv01.innerHTML = '<ol>hm</b> <li>ay <li>jdh <li>ff <li>f <li>list </ol>'
    }">
 
-
 <input type=button value="GEBI" onClick="{
   document.getElementById('myDiv01').innerHTML = 'yeet'
 }">
-
-
 
 <input type=button value="oh my god it works" onClick="{
   document.all.myDiv01.innerHTML = '<img src=\'myImage.png\' width=300>'
