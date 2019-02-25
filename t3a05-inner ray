@@ -18,9 +18,7 @@ x = <input type=text id="myText01" value=7><br><br>
 
 
 <input type=button value="no" onClick="{
-  document.all.myDiv01.innerHTML = 
-   '<font style=\' color:black; background-color:red\' color'+
-    '</font> you\'ve betrayed him '
+  document.all.myDiv01.innerHTML = '<iframe width=560 height=315 src=\'https://www.youtube.com/embed/Sx5Rh-bkW9I\' frameborder=0 allow=\'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'
 
 }">
 <!--honestly i cannot use my brain because it is too loud. help. 
@@ -28,14 +26,12 @@ x = <input type=text id="myText01" value=7><br><br>
   help.
    get rid of him again.-->
 
-<input type=button value="AAAAAAA" onClick="{
-  document.all.myDiv01.innerHTML = 
-  ' <font color=green>i cant fugure any of this out and im gonna cry</font>'
+<input type=button value="yh" onClick="{
+  document.all.myDiv01.innerHTML = '<input type=text id=\'myText01\' value=\'press GEBI to escape\'><textarea id=\'myDiv01\' rows=4 cols=70></textarea>'
    }">
 
 <input type=button value="i am Him" onClick="{
-  document.all.myDiv01.innerHTML = 
-  ' <font color=green>hm. i still havent figured out how to put photos so ill try today</font>'
+  document.all.myDiv01.innerHTML = '<table border=5> <tr><td></td><td>Him</td></tr> <tr><td>You</td><td><font color=green>im tired of this</font></td></tr>'
    }">
 
 <input type=button value="help" onClick="{
@@ -44,13 +40,15 @@ x = <input type=text id="myText01" value=7><br><br>
    }">
 
 <input type=button value="this sucks" onClick="{
-  document.all.myDiv01.innerHTML = 
-  ' <font color=green>yeah this is not a good class at the moment</font>'
+  document.all.myDiv01.innerHTML = '<ol>hm</b> <li>ay <li>jdh <li>ff <li>f <li>list </ol>'
    }">
+
 
 <input type=button value="GEBI" onClick="{
   document.getElementById('myDiv01').innerHTML = 'yeet'
 }">
+
+
 
 <input type=button value="oh my god it works" onClick="{
   document.all.myDiv01.innerHTML = '<img src=\'myImage.png\' width=300>'
