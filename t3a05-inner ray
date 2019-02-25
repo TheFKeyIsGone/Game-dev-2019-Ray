@@ -52,12 +52,10 @@ x = <input type=text id="myText01" value=7><br><br>
   document.getElementById('myDiv01').innerHTML = 'yeet'
 }">
 
-
-
 <input type=button value="oh my god it works" onClick="{
   document.all.myDiv01.innerHTML = '<img src=\'myImage.png\' width=300>'
 }">
 
-<input type=button value="i am actually going to cry" onClick="{
-  document.getElementById('myDiv01').innerHTML = 'nothing i use for the photo in the button works and it hurts'
+<input type=button value="link time" onClick="{
+  document.all.myDiv01.innerHTML = '<a href=\'https://www.quackit.com/javascript/tutorial/innerhtml_in_javascript.cfm\'>oh i have to type here</a>'
 }">
