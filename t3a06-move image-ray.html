@@ -1,0 +1,50 @@
+<h2 align=center>Move Image By Ray </h2>
+<img src="myImage.png" id="myImage02" width="500px">
+<img src="fly.jpeg" id="myImage01" style="position:relative; left:0px; top:0px; height:50px; width:50px"><br><br>
+
+
+<input type=text value="x = 0px"  onMouseover="{
+this.value = 'x = ' + document.getElementById('myImage01').style.left
+}">
+
+
+
+<table border=5>
+ 
+<tr><td><input type=button value="upleft" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+   }">
+
+</td><td><input type=button value="up" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+  }">
+
+</td><td><input type=button value="upright" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+   }"></td></tr>
+
+<tr><td><input type=button value="left" onClick="{
+ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+  }">
+
+</td><td>:)</td>
+
+<td><input type=button value="right" onClick="{
+ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+  }"></td></tr>
+
+<tr><td><input type=button value="downleft" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+   }">
+
+</td><td><input type=button value="Go down" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+  }">
+
+</td><td><input type=button value="downright" onClick="{
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+   }"></td></tr>
