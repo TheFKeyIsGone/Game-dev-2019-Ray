@@ -1,60 +1,48 @@
 <h2 align=center>autmove </h2>
 
-
 <img src="imgoingtocry.jfif" id="myImage01" style="position:relative; z-index:-1; left:0px; top:0px; height:50px; width:50px;"><br>
  
-
 <script> var myLooping = 0 </script>
 
- <input type=button value="auto right" onclick="{
-clearInterval(myLooping)
+<input type=button value="auto right" onclick="{
+ clearInterval(myLooping)
   myLooping = setInterval(function(){
-document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
-
-
-if (parseInt(document.getElementById('myImage01').style.left) > 580){
- document.getElementById('myImage01').style.left= '0px'
-}
-
-}, 60)
-}">
+   document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+    if (parseInt(document.getElementById('myImage01').style.left) > 580){
+     document.getElementById('myImage01').style.left= '0px'
+    }
+   }, 60)
+  }">
  
- <input type=button value="auto left" onclick="{
-clearInterval(myLooping)
+<input type=button value="auto left" onclick="{
+ clearInterval(myLooping)
   myLooping = setInterval(function(){
-document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
-
-
-if (parseInt(document.getElementById('myImage01').style.left) > 580){
- document.getElementById('myImage01').style.left= '0px'
-}
-
-}, 60)
-}">
+   document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+    if (parseInt(document.getElementById('myImage01').style.left) > 580){
+     document.getElementById('myImage01').style.left= '0px'
+    }
+   }, 60)
+  }">
  
- <input type=button value="auto down" onclick="{
-clearInterval(myLooping)
+<input type=button value="auto down" onclick="{
+ clearInterval(myLooping)
   myLooping = setInterval(function(){
-document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-
-if (parseInt(document.getElementById('myImage01').style.top) > 210){
- document.getElementById('myImage01').style.top= '0px'
-}
-}, 60)
-}">
+   document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+    if (parseInt(document.getElementById('myImage01').style.top) > 210){
+     document.getElementById('myImage01').style.top= '0px'
+    }
+   }, 60)
+  }">
  
- <input type=button value="auto up" onclick="{
-clearInterval(myLooping)
+<input type=button value="auto up" onclick="{
+ clearInterval(myLooping)
   myLooping = setInterval(function(){
-document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+    if (parseInt(document.getElementById('myImage01').style.top) > 9){
+     document.getElementById('myImage01').style.top= '0px'
+    }
+   }, 60)
+  }">
 
-
-if (parseInt(document.getElementById('myImage01').style.top) > 9){
- document.getElementById('myImage01').style.top= '0px'
-}
-
-}, 60)
-}">
-
-</body>
+ </body>
 </html>
