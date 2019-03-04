@@ -19,6 +19,42 @@ if (parseInt(document.getElementById('myImage01').style.left) > 580){
 }, 60)
 }">
  
+ <input type=button value="auto left" onclick="{
+clearInterval(myLooping)
+  myLooping = setInterval(function(){
+document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+
+
+if (parseInt(document.getElementById('myImage01').style.left) > 580){
+ document.getElementById('myImage01').style.left= '0px'
+}
+
+}, 60)
+}">
+ 
+ <input type=button value="auto down" onclick="{
+clearInterval(myLooping)
+  myLooping = setInterval(function(){
+document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+if (parseInt(document.getElementById('myImage01').style.top) > 210){
+ document.getElementById('myImage01').style.top= '0px'
+}
+}, 60)
+}">
+ 
+ <input type=button value="auto up" onclick="{
+clearInterval(myLooping)
+  myLooping = setInterval(function(){
+document.getElementById('myImage01').style.top= parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+
+
+if (parseInt(document.getElementById('myImage01').style.top) > 9){
+ document.getElementById('myImage01').style.top= '0px'
+}
+
+}, 60)
+}">
 
 </body>
 </html>
