@@ -2,7 +2,6 @@
  document.all.myLocation.value = 'left: '+event.x+', top: '+ event.y
   }">
 
-
 <h2 align=center>Collisions by Ray </h2>
 
 <script>
@@ -29,50 +28,81 @@ function myHitOther(my1, my2){
  <hr>
   
 <img src="fly.jpeg"  id="myImage01" 
- style="position:absolute; z-index:-1; left:0px; top:150px; height:30px; width:30px;">
+ style="position:absolute; z-index:-1; left:0px; top:200px; height:30px; width:30px;">
 
 <img src="imgoingtocry.jfif"  id="myImage02" 
- style="position:absolute; z-index:-1; left:100px; top:150px; height:30px; width:30px;">
+ style="position:absolute; z-index:-1; left:100px; top:200px; height:30px; width:30px;">
 
+        <table border=5>
+ 
+<tr><td><input type=button value="upleft" onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+  document.getElementById('myImage01').style.left = '10px'
+   //alert('fuck')
+    }
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+      document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+      }">
 
-<input type=button value="Go right"  onClick="{
+</td><td><input type=button value="up" onClick="{
  if ( myHitOther('myImage01','myImage02') ){
   document.getElementById('myImage01').style.left = '10px'
    //alert('I win')
     }
-     document.getElementById('myImage01').style.left = 
-      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
-       //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-        }">
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+     }">
 
-<input type=button value="Go left"  onClick="{
+</td><td><input type=button value="upright" onClick="{
  if ( myHitOther('myImage01','myImage02') ){
-  document.getElementById('myImage01').style.left = '-10px'
+  document.getElementById('myImage01').style.left = '10px'
    //alert('I win')
     }
-     document.getElementById('myImage01').style.left = 
-      parseInt(document.getElementById('myImage01').style.left) + -10 + 'px'
-       //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-        }">
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 +'px'
+      document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+      }"></td></tr>
 
-<input type=button value="Go up"  onClick="{
+<tr><td><input type=button value="left" onClick="{
  if ( myHitOther('myImage01','myImage02') ){
-  document.getElementById('myImage01').style.top = '-10px'
+  document.getElementById('myImage01').style.left = '10px'
    //alert('I win')
     }
-     document.getElementById('myImage01').style.top = 
-      parseInt(document.getElementById('myImage01').style.top) + -10 + 'px'
-       //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-        }">
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+     }">
 
-<input type=button value="Go down"  onClick="{
+</td><td>:)</td>
+
+<td><input type=button value="right" onClick="{
  if ( myHitOther('myImage01','myImage02') ){
-  document.getElementById('myImage01').style.top = '10px'
+  document.getElementById('myImage01').style.left = '10px'
    //alert('I win')
     }
-     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-      //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
-       }">
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+     }"></td></tr>
 
+<tr><td><input type=button value="downleft" onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+  document.getElementById('myImage01').style.left = '10px'
+   //alert('I win')
+    }
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+      document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 +'px'
+      }">
+
+</td><td><input type=button value="down" onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+  document.getElementById('myImage01').style.left = '10px'
+   //alert('I win')
+    }
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+     }">
+
+</td><td><input type=button value="downright" onClick="{
+ if ( myHitOther('myImage01','myImage02') ){
+  document.getElementById('myImage01').style.left = '10px'
+   //alert('I win')
+    }
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 +'px'
+      document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 +'px'
+      }"></td></tr>
 
 </body>
