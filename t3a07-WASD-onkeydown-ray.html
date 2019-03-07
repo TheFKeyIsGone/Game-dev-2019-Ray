@@ -1,26 +1,25 @@
-<h1 align=center> Game Dev by Ray 2019</h1>
+<html>
+ <head>
 
- <ol>
+</head>
 
-  <li><a href="file:///C:/Users/481250/OneDrive%20-%20SCHOOL%20DIST%2075%20(MISSION)/DobsonLyon-Ray-GameDev-2019/Index.html">link to my github website</a><br><br>
+<body onkeydown="{ 
+ document.all.myText01.value = event.key
+  if (event.key == 'd') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'  }  // d=go right
+   if (event.key == 'a') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'} //a left
+    if (event.key == 's') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px' }  //d=go right
+     if (event.key == 'w') {  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px' } //a left
+      if (event.key == 'ArrowRight') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'  }  // d=go right
+     if (event.key == 'ArrowLeft') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'} //a left
+    if (event.key == 'ArrowDown') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px' }  //d=go right
+   if (event.key == 'ArrowUp') {  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px' } //a left
+  }">
 
-   <li><a href="https://github.com/TheFKeyIsGone/Game-dev-2019-Ray">link to my github repository</a><br><br>
+<h2 align=center>WASD</h2>
 
-    <li><a href="https://www.coderbyte.com/editor/guest:First%20Reverse:JavaScript">coberbyte-javascript about first reverse</a><br><br>
- 
-     <li><a href="t3a01-webstuff ray.html">t3a01-webstuff ray</a><br><br>
-	
-      <li><a href="t3a02-advanced-webpage-ray.html">t3a02-advanced webpage</a><br><br>
- 	
-       <li><a href="https://sd75-my.sharepoint.com/personal/jeremy_ellis_mpsd_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjeremy_ellis_mpsd_ca%2FDocuments%2Fa-2018-2019-courses%2Fs2-game-dev-ellis-2019%2Fhandouts-s2-game-dev-ellis-2019">handouts</a><br><br>
-	
-        <li><a href="t3a03 Buttons Ray.html">t3a03-buttons ray</a><br><br>
-	
-         <li><a href="t3a04-all-ray.html">t3a04-all ray</a><br><br>
-	
-          <li><a href="t3a05-inner-ray.html">t3a05-inner ray</a><br><br>
-	
-           <li><a href="t3a06-move image-ray.html">t3a06-move image-Ray</a><br><br>
-	  
-            <li><a href="t3a07-WASD-onkeydown-ray.html">t3a07-WASD onkeydown-ray</a><br><br>
-</ol>
+<img src="imgoingtocry.jfif" id="myImage01" style="position:relative; z-index:-1; left:0px; top:0px; height:50px; width:50px;"><br>
+ <input id="myText01" type=text value=0 size=6 ><br>
+i actually cant make this any funnier. press the key to the left of Ctrl.
+
+ </body>
+</html>
