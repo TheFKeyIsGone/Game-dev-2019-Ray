@@ -19,57 +19,55 @@
 
 
 myChart[0][0] = 1
- myChart[1][1] = 4
+ myChart[1][1] = 4  
   myChart[1][0] = 2
-   myChart[0][1] = 16
-    myChart[2][2] = 6
+   myChart[0][1] = 16  
+    myChart[2][2] = 6   
      myChart[2][0] = 3
-      myChart[0][2] = 9
+      myChart[0][2] = 9   
        myChart[0][3] = 12
-        myChart[3][0] = 4
-         myChart[3][3] = 8
+        myChart[3][0] = 00
+         myChart[3][3] = 8   
           myChart[0][4] = 15
            myChart[4][0] = 5
-            myChart[4][4] = 10
-             myChart[0][5] = 18
-              myChart[5][0] = 6
-               myChart[5][5] = 12
-                myChart[0][6] = 20
+            myChart[4][4] = 10  
+             myChart[0][5] = 18  
+              myChart[5][0] = 00
+               myChart[5][5] = 12  
+                myChart[0][6] = 20  
                 myChart[6][0] = 7
                myChart[6][6] = 14
-              myChart[0][7] = 22
-             myChart[7][0] = 8
-            myChart[7][7] = 16
+              myChart[0][7] = 22   
+             myChart[7][0] = 00
+            myChart[7][7] = 00
            myChart[0][8] = 00
-          myChart[8][0] = 9
-         myChart[8][8] = 18
+          myChart[8][0] = 00
+         myChart[8][8] = 00
         myChart[0][9] = 00
-       myChart[9][0] = 10
-      myChart[9][9] = 20
+       myChart[9][0] = 00
+      myChart[9][9] = 00
      myChart[0][10] = 00
     myChart[10][0] = 11
-   myChart[10][10] = 22
+   myChart[10][10] = 00
   myChart[0][11] = 00
- myChart[11][0] = 12
+ myChart[11][0] = 00
 myChart[11][11] = 24
-
-
 
 
   document.getElementById('myDiv01').innerHTML += `
    <table border=1>
-    <tr><td>  ${myChart[0][0]} </td><td> ${myChart[1][0]} </td><td>  ${myChart[2][0]} </td><td>  ${myChart[3][0]} </td><td> ${myChart[4][0]} </td><td> ${myChart[5][0]} </td><td> ${myChart[6][0]} </td><td> ${myChart[7][0]} </td><td> ${myChart[8][0]} </td><td> ${myChart[9][0]} </td><td> ${myChart[10][0]} </td><td> ${myChart[11][0]} </td></tr>
-     <tr><td>  ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[2][2]} </td><td> ${myChart[3][3]} </td><td> ${myChart[4][4]} </td><td> ${myChart[5][5]} </td><td> ${myChart[6][6]} </td><td> ${myChart[7][7]} </td><td> ${myChart[8][8]} </td><td> ${myChart[9][9]} </td><td> ${myChart[10][10]} </td><td> ${myChart[11][11]} </td></tr>
+    <tr><td>  ${myChart[0][0]} </td><td> ${myChart[1][0]} </td><td>  ${myChart[2][0]} </td><td>  ${myChart[1][1]} </td><td> ${myChart[4][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[6][0]} </td><td> ${myChart[3][3]} </td><td> ${myChart[0][2]} </td><td> ${myChart[4][4]} </td><td> ${myChart[10][0]} </td><td> ${myChart[5][5]} </td></tr>
+     <tr><td>  ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[2][2]} </td><td> ${myChart[3][3]} </td><td> ${myChart[4][4]} </td><td> ${myChart[5][5]} </td><td> ${myChart[6][6]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][5]} </td><td> ${myChart[0][6]} </td><td> ${myChart[0][7]} </td><td> ${myChart[11][11]} </td></tr>
       <tr><td>  ${myChart[2][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[0][2]} </td><td> ${myChart[0][3]} </td></tr>
-       <tr><td> ${myChart[3][0]}</td><td> ${myChart[3][3]}</td><td> ${myChart[0][3]} </td></tr>
+       <tr><td> ${myChart[1][1]}</td><td> ${myChart[3][3]}</td><td> ${myChart[0][3]} </td></tr>
         <tr><td> ${myChart[4][0]}</td><td> ${myChart[4][4]} </td></tr>
-         <tr><td> ${myChart[5][0]}</td><td> ${myChart[5][5]} </td></tr>
+         <tr><td> ${myChart[2][2]}</td><td> ${myChart[5][5]} </td></tr>
           <tr><td> ${myChart[6][0]}</td><td> ${myChart[6][6]} </td></tr>
-           <tr><td> ${myChart[7][0]}</td><td> ${myChart[7][7]} </td></tr>
-            <tr><td> ${myChart[8][0]}</td><td> ${myChart[8][8]} </td></tr>
-             <tr><td> ${myChart[9][0]}</td><td> ${myChart[9][9]} </td></tr>
-              <tr><td> ${myChart[10][0]}</td><td> ${myChart[10][10]} </td></tr>
-               <tr><td> ${myChart[11][0]}</td><td> ${myChart[11][11]} </td></tr>
+           <tr><td> ${myChart[3][3]}</td><td> ${myChart[0][1]} </td></tr>
+            <tr><td> ${myChart[0][2]}</td><td> ${myChart[0][5]} </td></tr>
+             <tr><td> ${myChart[4][4]}</td><td> ${myChart[0][6]} </td></tr>
+              <tr><td> ${myChart[10][0]}</td><td> ${myChart[0][7]} </td></tr>
+               <tr><td> ${myChart[5][5]}</td><td> ${myChart[11][11]} </td></tr>
                 </table>`
                  }"><br><br>
 
