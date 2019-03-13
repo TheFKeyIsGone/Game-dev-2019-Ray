@@ -1,0 +1,52 @@
+<h2 align=center> 2d arrs</h2><br><br>
+
+
+<input type=button value="generate 2d" onclick="{
+ document.getElementById('myDiv01').innerHTML = ''
+  let myChart = new Array() 
+   myChart[0] = new Array()
+    myChart[1] = new Array()
+     myChart[2] = new Array()
+      myChart[3] = new Array()
+       myChart[4] = new Array()
+        myChart[5] = new Array()
+         myChart[6] = new Array()
+          myChart[7] = new Array()
+           myChart[8] = new Array()
+            myChart[9] = new Array()
+             myChart[10] = new Array()
+              myChart[11] = new Array()
+               myChart[12] = new Array()
+
+      
+      myChart[0][0] = 1
+       myChart[1][1] = 4
+        myChart[1][0] = 2
+         myChart[0][1] = 16
+          myChart[2][2] = 6
+           myChart[2][0] = 3
+            myChart[0][2] = 9
+             myChart[0][3] = 12
+              myChart[3][0] = 4
+               myChart[3][3] = 8
+             myChart[0][4] = 00
+              myChart[4][0] = 00
+               myChart[4][4] = 00
+             myChart[0][5] = 00
+              myChart[5][0] = 00
+               myChart[5][5] = 00
+
+
+  document.getElementById('myDiv01').innerHTML += `
+   <table border=1>
+    <tr><td>  ${myChart[0][0]} </td><td> ${myChart[1][0]} </td><td>  ${myChart[2][0]} </td><td>  ${myChart[3][0]} </td></tr>
+     <tr><td>  ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[2][2]} </td><td> ${myChart[3][3]} </td></tr>
+<tr><td>  ${myChart[2][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[0][2]} </td><td> ${myChart[0][3]} </td></tr>
+<tr><td> ${myChart[3][0]}</td><td> ${myChart[3][3]}</td><td> ${myChart[0][3]} </td><td> ${myChart[0][1]} </td></tr>
+
+      </table>`
+      }"><br><br>
+
+
+
+<div id="myDiv01"> your chart will go here</div>
