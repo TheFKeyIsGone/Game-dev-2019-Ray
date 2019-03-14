@@ -19,55 +19,71 @@
 
 
 myChart[0][0] = 1
- myChart[1][1] = 4  
-  myChart[1][0] = 2
-   myChart[0][1] = 16  
-    myChart[2][2] = 6   
-     myChart[2][0] = 3
-      myChart[0][2] = 9   
-       myChart[0][3] = 12
-        myChart[3][0] = 00
-         myChart[3][3] = 8   
-          myChart[0][4] = 15
-           myChart[4][0] = 5
-            myChart[4][4] = 10  
-             myChart[0][5] = 18  
-              myChart[5][0] = 00
-               myChart[5][5] = 12  
-                myChart[0][6] = 20  
-                myChart[6][0] = 7
-               myChart[6][6] = 14
-              myChart[0][7] = 22   
-             myChart[7][0] = 00
-            myChart[7][7] = 00
-           myChart[0][8] = 00
-          myChart[8][0] = 00
-         myChart[8][8] = 00
-        myChart[0][9] = 00
-       myChart[9][0] = 00
-      myChart[9][9] = 00
-     myChart[0][10] = 00
-    myChart[10][0] = 11
-   myChart[10][10] = 00
-  myChart[0][11] = 00
- myChart[11][0] = 00
+myChart[1][0] = 2
+myChart[2][0] = 3
+myChart[1][1] = 4
+myChart[4][0] = 5
+myChart[2][2] = 6
+myChart[6][0] = 7
+myChart[3][3] = 8
+myChart[0][2] = 9
+myChart[4][4] = 10
+myChart[10][0] = 11   
+myChart[5][5] = 12
+myChart[1][2] = 13
+myChart[6][6] = 14
+myChart[0][4] = 15
+myChart[0][1] = 16
+myChart[2][1] = 17
+myChart[0][5] = 18 
+myChart[2][3] = 19
+myChart[0][6] = 20
+myChart[3][0] = 21
+myChart[0][7] = 22
+myChart[3][2] = 23
 myChart[11][11] = 24
+myChart[0][10] = 25
+myChart[3][4] = 26
+myChart[5][0] = 27 
+myChart[8][0] = 28
+myChart[4][3] = 29
+myChart[7][0] = 30
+myChart[4][5] = 31
+myChart[8][8] = 32
+myChart[7][7] = 33
+myChart[5][4] = 34
+myChart[10][10] = 35
+myChart[0][8] = 36
+myChart[5][6] = 37
+myChart[6][5] = 38
+myChart[6][7] = 39
+myChart[0][9] = 40
+myChart[7][6] = 41
+myChart[7][8] = 42
+myChart[8][7] = 43
+myChart[9][0] = 44
+myChart[0][11] = 45
+myChart[8][9] = 46
+myChart[9][8] = 47
+myChart[9][9] = 48          
+myChart[9][10] = 49
+myChart[11][0] = 50
 
 
   document.getElementById('myDiv01').innerHTML += `
-   <table border=1>
-    <tr><td>  ${myChart[0][0]} </td><td> ${myChart[1][0]} </td><td>  ${myChart[2][0]} </td><td>  ${myChart[1][1]} </td><td> ${myChart[4][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[6][0]} </td><td> ${myChart[3][3]} </td><td> ${myChart[0][2]} </td><td> ${myChart[4][4]} </td><td> ${myChart[10][0]} </td><td> ${myChart[5][5]} </td></tr>
-     <tr><td>  ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[2][2]} </td><td> ${myChart[3][3]} </td><td> ${myChart[4][4]} </td><td> ${myChart[5][5]} </td><td> ${myChart[6][6]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][5]} </td><td> ${myChart[0][6]} </td><td> ${myChart[0][7]} </td><td> ${myChart[11][11]} </td></tr>
-      <tr><td>  ${myChart[2][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[0][2]} </td><td> ${myChart[0][3]} </td></tr>
-       <tr><td> ${myChart[1][1]}</td><td> ${myChart[3][3]}</td><td> ${myChart[0][3]} </td></tr>
-        <tr><td> ${myChart[4][0]}</td><td> ${myChart[4][4]} </td></tr>
-         <tr><td> ${myChart[2][2]}</td><td> ${myChart[5][5]} </td></tr>
-          <tr><td> ${myChart[6][0]}</td><td> ${myChart[6][6]} </td></tr>
-           <tr><td> ${myChart[3][3]}</td><td> ${myChart[0][1]} </td></tr>
-            <tr><td> ${myChart[0][2]}</td><td> ${myChart[0][5]} </td></tr>
-             <tr><td> ${myChart[4][4]}</td><td> ${myChart[0][6]} </td></tr>
-              <tr><td> ${myChart[10][0]}</td><td> ${myChart[0][7]} </td></tr>
-               <tr><td> ${myChart[5][5]}</td><td> ${myChart[11][11]} </td></tr>
+   <table border = 1>
+    <tr><td> ${myChart[0][0]} </td><td> ${myChart[1][0]} </td><td> ${myChart[2][0]} </td><td>  ${myChart[1][1]} </td><td> ${myChart[4][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[6][0]} </td><td> ${myChart[3][3]} </td><td> ${myChart[0][2]} </td><td> ${myChart[4][4]} </td><td> ${myChart[10][0]} </td><td> ${myChart[5][5]} </td></tr>
+     <tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[2][2]} </td><td> ${myChart[3][3]} </td><td> ${myChart[4][4]} </td><td> ${myChart[5][5]} </td><td> ${myChart[6][6]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][5]} </td><td> ${myChart[0][6]} </td><td> ${myChart[0][7]} </td><td> ${myChart[11][11]} </td></tr>
+      <tr><td> ${myChart[2][0]} </td><td> ${myChart[2][2]} </td><td> ${myChart[0][2]} </td><td> ${myChart[5][5]} </td><td> ${myChart[0][4]} </td><td> ${myChart[0][5]} </td><td> ${myChart[3][0]} </td><td> ${myChart[11][11]} </td><td> ${myChart[5][0]} </td><td> ${myChart[7][0]} </td><td> ${myChart[7][7]} </td><td> ${myChart[0][8]} </td></tr>
+       <tr><td> ${myChart[1][1]} </td><td> ${myChart[3][3]} </td><td> ${myChart[5][5]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][6]} </td><td> ${myChart[11][11]} </td><td> ${myChart[8][0]} </td><td> ${myChart[8][8]} </td><td> ${myChart[0][8]} </td><td> ${myChart[0][9]} </td><td> ${myChart[9][0]} </td><td> ${myChart[9][9]} </td></tr>
+        <tr><td> ${myChart[4][0]} </td><td> ${myChart[4][4]} </td><td> ${myChart[0][4]} </td><td> ${myChart[0][6]} </td></tr>
+         <tr><td> ${myChart[2][2]} </td><td> ${myChart[5][5]}  </td><td> ${myChart[0][5]} </td><td> ${myChart[11][11]} </td></tr>
+          <tr><td> ${myChart[6][0]} </td><td> ${myChart[6][6]} </td><td> ${myChart[3][0]} </td><td> ${myChart[8][0]} </td></tr>
+           <tr><td> ${myChart[3][3]} </td><td> ${myChart[0][1]} </td><td> ${myChart[11][11]} </td><td> ${myChart[8][8]} </td></tr>
+            <tr><td> ${myChart[0][2]} </td><td> ${myChart[0][5]} </td><td> ${myChart[5][0]} </td><td> ${myChart[0][8]} </td></tr>
+             <tr><td> ${myChart[4][4]} </td><td> ${myChart[0][6]} </td><td> ${myChart[7][0]} </td><td> ${myChart[0][9]} </td></tr>
+              <tr><td> ${myChart[10][0]} </td><td> ${myChart[0][7]} </td><td> ${myChart[7][7]} </td><td> ${myChart[9][0]} </td></tr>
+               <tr><td> ${myChart[5][5]} </td><td> ${myChart[11][11]} </td><td> ${myChart[0][8]} </td><td> ${myChart[9][9]} </td></tr>
                 </table>`
                  }"><br><br>
 
