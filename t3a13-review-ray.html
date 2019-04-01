@@ -1,7 +1,40 @@
 
+ <script>
+
+  function my01(){
+   document.all.myArea01.value = 'test 01'
+    }
+
+  function my02(){
+   document.all.myArea01.value = 'test 02'
+    }
+     
+  function my03(){
+   document.all.myArea01.value = 'test 03'
+    }
+
+
+</script>
+
 <input type=button value="list" onClick="{
-  document.all.myDiv01.innerHTML = ' <ol>the things</b>  <li>input output using text and divs  <li>variables x=3 <li>classes <li>decisions <li>functions <li>loops <li>arrays <li>objects <li>events </ol>'
+  document.all.myDiv01.innerHTML = ' <ol>the things</b>  <li>input output  <li>variables x=3 <li>decisions <li>loops <li>arrays <li>function <li>events <li>objects <li>classes </ol>'
 }">
 
+<input type=text id="mytext01" value="demonstrate ehehehehehe"><br>
+ <textarea id="myArea01" rows=4 cols=70></textarea><br>
 
- <div id="myDiv01">testing testing</div><br>
+<input type=button value="first 3" onClick="{
+ my01()
+}">
+
+<input type=button value="middle 3" onClick="{
+my02()
+}">
+
+<input type=button value="last 3" onClick="{
+my03()
+}">
+
+<div id="myDiv01"> </div><br>
+
+
