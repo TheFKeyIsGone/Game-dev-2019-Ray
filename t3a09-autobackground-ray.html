@@ -1,6 +1,6 @@
 <body id="myBody01" style="background-repeat; background-size: 80%" background="myBackgroundImage01.jpg">
 
-  <script>
+<script>
 let myGlobalX = 0
 let myClock
 var myLooping = 0 
@@ -8,16 +8,23 @@ var myLooping = 0
 
 <input id="myButton01" type=button value="background auto left" onclick="{
 myTemp = '100px 0px'
-myGlobalX -= 5
+myGlobalX -= -5
 myTemp = myGlobalX + 'px 0px'
 document.getElementById('myBody01').style.backgroundPosition = myTemp
-
-}">
-
-<input id="myButton02" type=button value="background auto right" onclick="{
 clearInterval(myClock)
 myClock = setInterval(function(){
 document.getElementById('myButton01').click()
+}, 100)
+}">
+
+<input id="myButton02" type=button value="background auto right" onclick="{
+myTemp = '100px 0px'
+myGlobalX -= 5
+myTemp = myGlobalX + 'px 0px'
+document.getElementById('myBody01').style.backgroundPosition = myTemp
+clearInterval(myClock)
+myClock = setInterval(function(){
+document.getElementById('myButton02').click()
 }, 100)
 }">
 
