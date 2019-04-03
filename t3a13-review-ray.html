@@ -1,40 +1,66 @@
-
- <script>
+<script>
 
   function my01(){
-   document.all.myArea01.value = 'test 01'
+   document.all.myDiv01.innerHTML = 'test 01'
     }
 
   function my02(){
-   document.all.myArea01.value = 'test 02'
+   document.all.myDiv01.innerHTML = 'test 02'
     }
      
   function my03(){
-   document.all.myArea01.value = 'test 03'
+   document.all.myDiv01.innerHTML = 'test 03'
     }
-
 
 </script>
 
 <input type=button value="list" onClick="{
-  document.all.myDiv01.innerHTML = ' <ol>the things</b>  <li>input output  <li>variables x=3 <li>decisions <li>loops <li>arrays <li>function <li>events <li>objects <li>classes </ol>'
-}">
+ document.all.myDiv01.innerHTML = ' <ol>the things</b>  <li>input output  <li>variables <li>decisions <li>loops <li>arrays <li>function <li>events <li>objects <li>classes </ol>'
+  }">
 
-<input type=text id="mytext01" value="demonstrate ehehehehehe"><br>
- <textarea id="myArea01" rows=4 cols=70></textarea><br>
 
-<input type=button value="first 3" onClick="{
- my01()
-}">
+<input type=text id="mytext01" value="the things"><br>
+ <textarea id="myArea01" rows=11 cols=25></textarea><br>
+
+
+<input type=button value="first 3" onclick="{
+ x = 9
+  if (x == 9){
+   document.all.myArea01.value = 'congrats! you just watched a few lines of code do its job!'
+    } else {
+     document.myArea01.value = 'fuck you. the code doesnt work and i hate you.'
+     }
+      }">
+
 
 <input type=button value="middle 3" onClick="{
-my02()
-}">
+ myMax = 3
+  myArray = new Array(myMax)
+   myArray[1] = 'no'
+    myArray[2] = 'nO'
+     myArray[3] = 'NO '
+      document.all.myArea01.value = ''
+       for ( x = 1; x <= 3; x++){
+        document.all.myArea01.value += myArray[x] + ' '
+         }
+          }">
 
-<input type=button value="last 3" onClick="{
-my03()
-}">
+<input type=button value="last 3" onMouseover="{
+ x = 2
+  person = {
+   firstName: 'Doodle ',
+    lastName: 'Dip',
+     age: 25,
+      eyeColor: 'purple'
+       }
 
-<div id="myDiv01"> </div><br>
+        document.all.myArea01.value = 'It\'s time, Mr.' +
+         person.firstName + person.lastName + '. For the ' + person.age + ' years you have been alive you are finally going to die.'
+          + ' Your ' + person.eyeColor + ' eyes have never seen true terror until now. Accept your fate or you will die a painful death. Now click to see the universe in its truest form.'
+           }"
+
+            onClick="{
+             document.all.myArea01.value = JSON.stringify(document, null, 3)}">
 
 
+ <div id="myDiv01"> </div><br>
