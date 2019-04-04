@@ -1,7 +1,4 @@
-
-
-
-<body bgcolor="yellow"   onMouseMove="{
+<body bgcolor="OliveDrab"   onMouseMove="{
  document.all.myLocation.value = 'left: '+event.x+', top: '+ event.y
   }">
 
@@ -26,7 +23,10 @@
             }
            }
 
+
+
         </script>
+
 
 <input type=text id="myLocation" value=0 size=14"><br>
  <hr>
@@ -36,6 +36,9 @@
 
 <img src="imgoingtocry.jfif"  id="myImage02" 
  style="position:absolute; z-index:-1; left:100px; top:200px; height:50px; width:50px;">
+
+<img src="congrat.png"  id="myImage03" 
+ style="position:absolute; z-index:-1; left:300px; top:200px; height:50px; width:50px;">
 
         <table border=5>
  
@@ -77,14 +80,23 @@ clearInterval(myLooping)
       }">
 </td>
 
-<!--- move the images to the center of the page to fix our left and up(?maybe?) border issues.
-figure out how to stop the fly after it returns to its position.
-to do that i need to make a stop button ---!>
+
 
 
 <td>stop</td>
 
-<td><input type=button value="right" onClick="{
+
+
+
+
+
+
+
+
+
+
+<td>
+<input type=button value="right" onClick="{
 
    clearInterval(myLooping)
    myLooping = setInterval(function(){
@@ -93,16 +105,19 @@ to do that i need to make a stop button ---!>
                 document.getElementById('myImage01').style.left= '0px'
              }
               if (myHitOther('myImage01','myImage02')){
-                 document.getElementById('myImage01').style.left = '10px'
+                 document.getElementById('myImage01').style.left = '10px';
+          document.getElementById('myImage03').style.visibility = 'hidden';
+
               }
 
-    }, 60) 
+
+}
+    }, 60 ) 
 }">
 </td></tr>
 
 
-<!--- put the checks inside the if statement 
-check the right button at the bottom of page for your base---!>
+
 
 
 	<tr><td><input type=button value="downleft" onClick="{
@@ -153,5 +168,33 @@ check the right button at the bottom of page for your base---!>
 
     }, 60) 
 }">
+
+
+
+
+<input type=button value="right" onClick="{
+
+   clearInterval(myLooping)
+   myLooping = setInterval(function(){
+             document.getElementById('myImage01').style.left= parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+             if (parseInt(document.getElementById('myImage01').style.left) > 580){
+                document.getElementById('myImage01').style.left= '0px'
+             }
+              if (myHitOther('myImage01','myImage02')){
+                 document.getElementById('myImage01').style.left = '10px'
+              }
+
+if (myHitOther('myImage01','myImage02')){
+function Visibility() {
+  document.getElementById('myImage03').style.visibility = 'hidden';
+}
+}
+    }, 60) 
+}">
+
+
+
+
+
 
 ---!>
