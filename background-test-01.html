@@ -1,6 +1,19 @@
 <img id="background-01" style="position:relative; width:860px; height:54px; top:0px; left:0px;" src="background-01.png">
 
+<img id="myImage01" style="position:absolute; width:50px; height:40px; top:19px; left:0px;" src="output-onlinepngtools (1).png">
 
+<html>
 
-<img id="sprite-default" style="position:absolute; width:50px; height:40px; top:19px; left:0px;" src="output-onlinepngtools (1).png">
+<body onkeydown="{ 
+ if (event.key == 'd') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'  }  // d=go right
+  if (event.key == 'a') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'} //a left
+   if (event.key == 's') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px' }  //d=go right
+    if (event.key == 'w') {  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px' } //a left
+     if (event.key == 'ArrowRight') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'  }  // d=go right
+    if (event.key == 'ArrowLeft') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'} //a left
+   if (event.key == 'ArrowDown') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px' }  //d=go right
+  if (event.key == 'ArrowUp') {  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px' } //a left
+ }">
 
+</body>
+</html>
