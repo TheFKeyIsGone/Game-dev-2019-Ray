@@ -2,9 +2,19 @@
 
 <img id="myImage01" style="position:absolute; width:50px; height:40px; top:19px; left:5px;" src="output-onlinepngtools (1).png">
 
+<script>
+function timer() {
+  setTimeout(myTimeout1, 1000) 
+}
+
+function myTimeout1() {
+  document.getElementById('myImage01').src='output-onlinepngtools (1).png';
+}
+</script>
+
 <html>
 
-<body onkeydown="{ 
+<body onkeydown="{
  if (event.key == 'd') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 5 } // d=go right
   if (event.key == 'a') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 5 + 'px'} //a left
    if (event.key == 's') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 5 + 'px' }  //d=go right
@@ -13,23 +23,8 @@
     if (event.key == 'ArrowLeft') {  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 5 + 'px'} //a left
    if (event.key == 'ArrowDown') { document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 5 + 'px' }  //d=go right
   if (event.key == 'ArrowUp') {  document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 5 + 'px' } //a left
- }">
-</body>
-
-
-
-
-<body onkeydown="{ 
- if (event.key == 'd') {  document.getElementById('myImage01').src='sprite-right.png'
-
-} else {
-
-document.getElementById('myImage01').src='output-onlinepngtools (1).png' }
-
+if (event.key == 'd') {   document.getElementById('myImage01').src='sprite-right.png'}; {document.getElementById('myImage01').src='output-onlinepngtools (1).png'}
+if (event.key == 'a') {  document.getElementById('myImage01').src='sprite-left.png'}
 }">
-
-
 </body>
-
- 
 </html>
