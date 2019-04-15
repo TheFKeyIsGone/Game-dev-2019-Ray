@@ -41,7 +41,7 @@
           (bottom1 >=  top2   ) &&
            (left1   <=  right2 ) &&
             (top1    <=  bottom2) ){
-             return true
+             alert('win!');
               }
                }
 
@@ -99,7 +99,11 @@
         }">
          </td>
 
-<td>stop</td>
+<td><input type=button value="stop" onClick="{
+clearInterval(myLooping)
+ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 0 +'px'
+  document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 0 +'px'
+   }"></td>
 
 <td>
  <input type=button value="right" onClick="{
