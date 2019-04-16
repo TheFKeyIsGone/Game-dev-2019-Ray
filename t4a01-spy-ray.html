@@ -4,10 +4,37 @@
    let myTemp = ''
    myString = document.getElementById('myArea01').value.toLowerCase().split('') 
    for (let myLoop=0; myLoop < myString.length; myLoop++){
-   myTemp = myString[myLoop]
-   if (myString[myLoop] == 'e' ) {myTemp = 'f'}
-   if (myString[myLoop] == 'h' ) {myTemp = 'i'}
-   myString[myLoop] = myTemp
+      myTemp = myString[myLoop]
+
+      if (myString[myLoop] == 'a' ) {myTemp = 'f'}
+      if (myString[myLoop] == 'b' ) {myTemp = 'e'}
+      if (myString[myLoop] == 'c' ) {myTemp = 'i'}
+      if (myString[myLoop] == 'd' ) {myTemp = 'a'}
+      if (myString[myLoop] == 'e' ) {myTemp = 'z'}
+      if (myString[myLoop] == 'f' ) {myTemp = 's'}
+      if (myString[myLoop] == 'g' ) {myTemp = 'p'}
+      if (myString[myLoop] == 'h' ) {myTemp = 'j'}
+      if (myString[myLoop] == 'i' ) {myTemp = 'o'}
+      if (myString[myLoop] == 'j' ) {myTemp = 'g'}
+      if (myString[myLoop] == 'k' ) {myTemp = 't'}
+      if (myString[myLoop] == 'l' ) {myTemp = 'b'}
+      if (myString[myLoop] == 'm' ) {myTemp = 'n'}
+      if (myString[myLoop] == 'n' ) {myTemp = 'm'}
+      if (myString[myLoop] == 'o' ) {myTemp = 'c'}
+      if (myString[myLoop] == 'p' ) {myTemp = 'x'}
+      if (myString[myLoop] == 'q' ) {myTemp = 'v'}
+      if (myString[myLoop] == 'r' ) {myTemp = 'k'}
+      if (myString[myLoop] == 's' ) {myTemp = 'q'}
+      if (myString[myLoop] == 't' ) {myTemp = 'r'}
+      if (myString[myLoop] == 'u' ) {myTemp = 'h'}
+      if (myString[myLoop] == 'v' ) {myTemp = 'w'}
+      if (myString[myLoop] == 'w' ) {myTemp = 'y'}
+      if (myString[myLoop] == 'x' ) {myTemp = 'd'}
+      if (myString[myLoop] == 'y' ) {myTemp = 'l'}
+      if (myString[myLoop] == 'z' ) {myTemp = 'u'}
+     
+
+      myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
    }"><br><br>
@@ -15,12 +42,44 @@
 <textarea id="myArea02" rows=4 cols=70></textarea><br>
 
 <input type=button value="decrypt" onclick="{
-   myString = document.getElementById('myArea02').value.split('')
-   if (myString[0] == 'F') {
-     myString[0] = 'E'
+   let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('') 
+   for (let myLoop=0; myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+
+      if (myString[myLoop] == 'f' ) {myTemp = 'a'}
+      if (myString[myLoop] == 'e' ) {myTemp = 'b'}
+      if (myString[myLoop] == 'i' ) {myTemp = 'c'}
+      if (myString[myLoop] == 'a' ) {myTemp = 'd'}
+      if (myString[myLoop] == 'z' ) {myTemp = 'e'}
+      if (myString[myLoop] == 's' ) {myTemp = 'f'}
+      if (myString[myLoop] == 'p' ) {myTemp = 'g'}
+      if (myString[myLoop] == 'j' ) {myTemp = 'h'}
+      if (myString[myLoop] == 'o' ) {myTemp = 'i'}
+      if (myString[myLoop] == 'g' ) {myTemp = 'j'}
+      if (myString[myLoop] == 't' ) {myTemp = 'k'}
+      if (myString[myLoop] == 'b' ) {myTemp = 'l'}
+      if (myString[myLoop] == 'n' ) {myTemp = 'm'}
+      if (myString[myLoop] == 'm' ) {myTemp = 'n'}
+      if (myString[myLoop] == 'c' ) {myTemp = 'o'}
+      if (myString[myLoop] == 'x' ) {myTemp = 'p'}
+      if (myString[myLoop] == 'v' ) {myTemp = 'q'}
+      if (myString[myLoop] == 'k' ) {myTemp = 'r'}
+      if (myString[myLoop] == 'q' ) {myTemp = 's'}
+      if (myString[myLoop] == 'r' ) {myTemp = 't'}
+      if (myString[myLoop] == 'h' ) {myTemp = 'u'}
+      if (myString[myLoop] == 'w' ) {myTemp = 'v'}
+      if (myString[myLoop] == 'y' ) {myTemp = 'w'}
+      if (myString[myLoop] == 'd' ) {myTemp = 'x'}
+      if (myString[myLoop] == 'l' ) {myTemp = 'y'}
+      if (myString[myLoop] == 'u' ) {myTemp = 'z'}
+
+      myString[myLoop] = myTemp
    }
-    document.getElementById('myArea03').value = myString.join('')
+   document.getElementById('myArea03').value = myString.join('')
    }"><br><br>
+
+
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br>
 
@@ -39,5 +98,5 @@ let myTemp =''
 for (let x=0; x < myString.length; x++){
 myTemp += String.fromCharCode(myString.charCodeAt(x)+1)
 }
-document.getElementById('myArea02').value = myTemp
+document.getElementById('myArea03').value = myTemp
 }"><br><br>
