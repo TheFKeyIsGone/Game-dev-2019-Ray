@@ -1,0 +1,32 @@
+<body onload="{
+myStorage = localStorage.getItem('myStoredText')
+//alert(myStorage)
+if(myStorage  != null){
+document.getElementById('myText1').value = myStorage
+}
+}">
+
+<body onunload="{
+localStorage.setItem('myStoredText',document.getElementById('myText1').value)
+}">
+
+<h2>Instructions:</h2>
+PAss: make several b<br>
+<pre>
+myCars = new Array()
+myCars[1] = 'BMW'
+myCars[2] = 'Smartcar'
+</pre>
+
+
+<input id="myText1" type=text size=70 value="Write stuff here to be stored for the next time yoou come back to thjis site"><br>
+
+<input type="button" value="Store Text" onclick="{
+localStorage.setItem('myStoredText', document.getElementById('myText1').value)
+alert(document.getElementById('myText1').value + ' \nHas been stored')
+document.getElementById('myText1').value = ''
+}">
+
+<input type="button" value="Retreice text" onclick="{
+document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+}">
